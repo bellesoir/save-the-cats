@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    background-color: purple;
+  }
+
+
+
+h1 {
+  border: dashed;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: dashed;
+}
+
+
+
+
+
+.background {
+  background-color: purple;
+}
