@@ -19,6 +19,10 @@ header {
     background-color: #36a332;
 }
 
+nav ul {
+    margin-bottom: 0;
+}
+
 nav li {
     display: inline-block;
     float: right;
