@@ -6,6 +6,8 @@
 body {
     font: normal 16px Garamond, times, serif;
     margin-top: 40px;
+    background-color: #60f2ef;
+
 }
 
 header {
@@ -49,14 +51,17 @@ nav a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+    background-color: #FFF;
 }
 
 h1 {
     font: normal 56px 'Century Gothic', arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     color: #ff7700;
 }
+
+
 
 /*small devices, i.e. tablets*/
 @media all and (min-width: 768px){
@@ -69,7 +74,7 @@ h1 {
 
 /*medium devices, i.e. desktop*/
 @media all and (min-width: 992px){
-    
+
 }
 
 /*large devices, i.e. large desktop*/
