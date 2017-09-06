@@ -1,25 +1,30 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-		
-		var cats = document.getElementById('secondSave');
-		var splinters = document.getElementById('thirdSave');
 
 		function transferAmount(){
 
-			//change number of kittens saved
-			var kittensRescued = document.getElementById('money');
-			var kittens = document.getElementById('firstSave');
-			kittens.innerText = kittensRescued.value;
-			console.log(kittens.innerText + ' kittens saved.');
+			var donation = document.getElementById('money');
+			var kittens = document.getElementById('firstSave');			
 
-			kittens.innerText = kittensRescued.value;
-			
-			
+			var catsBathed = document.getElementById('money');
+			var cats = document.getElementById('secondSave');
 
-			//change cat number
-			//change splinter number
-			//alert( 'thanks for donating!')
+			var splintersRemoved = document.getElementById('money');
+			var splinters = document.getElementById('thirdSave');
 
+			//top secret math
+			if ( Number(donation.value) > 0 ) {
+				kittens.innerText = ( Number(donation.value) + 16);
+				console.log(kittens.innerText + ' kittens saved.');
+
+				cats.innerText = ( Number(donation.value) * 1.5);
+				console.log(cats.innerText + ' cats bathed.');
+
+				splinters.innerText = ( Number(donation.value) - 1);
+				console.log(splinters.innerText + ' splinters pulled.');
+			} else {
+				alert(document.querySelector('#donorName').value + ': Please enter an amount greater than zero.');
+			};
 
 		}	
 		

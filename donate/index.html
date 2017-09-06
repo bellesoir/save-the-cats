@@ -4,41 +4,54 @@
 	 <meta charset="utf-8">
    <meta name='viewport' content="width=device-width, initial-scale=1">
    <title>Save The Cats</title>
-   <link rel='stylesheet' href='../css/style.css'>
+   <link rel="stylesheet" type="text/css" href="../css/reset.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <link rel='stylesheet' href='../css/style.css'>
+    <link rel='stylesheet' href='../css/donate.css'>
 	<script type='text/javascript' src='../js/donate.js'></script>
 </head>
 <body>
 
+        <header>
+            <nav>
+                <ul>
+                    <li><a href='#'>Contact Us</a></li>
+                    <li><a href='../gallery/index.html'>Gallery</a></li>
+                    <li><a href='index.html'>Donate</a></li>
+                    <li><a href='../index.html'>Home</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<p>Donate now to save the cats!</p>
+<h1>Donate now to save the cats!</h1>
 
-<div class="row">
-  <div class="col-sm-6">
-  	<form>
-  		Name:<br>
-  		<input type="text" name="donorName"><br>
-  		Amount:<br>
-  		<input type="number" name="donorAmount" id="money" >
-		</form>
+<div class="container">
+  <!-- Here's the form on the left -->
+  <div class="row">
+    <div class="col-sm-6" id="donationForm">
+    	<form>
+    		Name:<br>
+    		<input type="text" id="donorName"><br>
+    		Amount:<br>
+    		<span>$</span><input type="number" id="money">
+  		</form>
+  		<button class="submit-button" type="submit">Donate!</button>
+    </div>
 
-		<button class="submit-button" type="submit">Donate!</button>
-  </div>
+  	<!-- Here are the results on the right -->
+    <div class="col-sm-6" id="donationResults">
+    	<p>Your donation will help in the following ways:</p>
+  		<p><span id="firstSave">0</span> kittens will be rescued from storm drains.</p>
+  		<p><span id="secondSave">0</span> cats will get flea baths.</p>
+  		<p><span id="thirdSave">0</span> splinters will be pulled from paws.</p>
+    </div>
+</div>
 
+  <footer>
 
-  <div class="col-sm-6">
-  	<p>Your donation will help in the following ways:</p>
+  </footer>
 
-		<p><span id="firstSave">0</span> kittens will be rescued from stormdrains.</p>
-		<p><span id="secondSave">0</span> cats will get flea baths.</p>
-		<p><span id="thirdSave">0</span> splinters will be pulled from paws.</p>
-
-  </div>
-
-
-
-
-
+  <script type='text/javascript' src='../js/main.js'></script>
 
 
 </body>
