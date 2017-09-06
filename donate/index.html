@@ -13,33 +13,25 @@
 
 <p>Donate now to save the cats!</p>
 
+<!-- Here's the form on the left -->
 <div class="row">
   <div class="col-sm-6">
   	<form>
   		Name:<br>
-  		<input type="text" name="donorName"><br>
+  		<input type="text" id="donorName"><br>
   		Amount:<br>
-  		<input type="number" name="donorAmount" id="money" >
+  		<span>$</span><input type="number" id="money">
 		</form>
-
 		<button class="submit-button" type="submit">Donate!</button>
   </div>
 
-
+	<!-- Here are the results on the right -->
   <div class="col-sm-6">
   	<p>Your donation will help in the following ways:</p>
-
-		<p><span id="firstSave">0</span> kittens will be rescued from stormdrains.</p>
+		<p><span id="firstSave">0</span> kittens will be rescued from storm drains.</p>
 		<p><span id="secondSave">0</span> cats will get flea baths.</p>
 		<p><span id="thirdSave">0</span> splinters will be pulled from paws.</p>
-
   </div>
-
-
-
-
-
-
 
 </body>
 </html>
