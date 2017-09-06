@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 16px Garamond, times, serif;
+    margin-top: 60px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: auto;
+    height: 40px;
+    width: 100%;
+    min-width: 325px;
+    padding: 10px 0;
+    background-color: #36a332;
+}
+
+nav li {
+    display: inline-block;
+    float: right;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: #10e8e0;
+}
+
+h1 {
+    font: normal 48px 'Century Gothic', arial, sans-serif;
+    text-align: center;
+}
