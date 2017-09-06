@@ -1,0 +1,16 @@
+#donationForm {
+	color: white;
+	background-color: #36a332;
+	border-radius: 5px 5px 5px 25px;
+}
+
+#donationForm p,
+#donationForm input {
+	margin: 2px;
+
+}
+
+#donationResults {
+	background-color: #99FFFF;
+	border-radius: 5px 25px 5px 5px;
+}
