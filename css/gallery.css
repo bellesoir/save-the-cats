@@ -14,7 +14,14 @@ h1 {
 img {
   margin-top: 10px;
   margin-bottom: 10px;
+  border-width: 2px;
   border-style: dashed;
+  border-color: yellow;
+
+}
+
+.center {
+  text-align: center;
 }
 
 
