@@ -10,15 +10,18 @@ body {
 
 }
 
+header, nav, ul {
+    overflow: auto;
+}
+
 header {
     position: fixed;
     top: 0;
     z-index: 1;
-    overflow: auto;
     height: 40px;
     width: 100%;
     min-width: 325px;
-    padding: 10px 0;
+    padding: 9px 0;
     background-color: #36a332;
 }
 
@@ -53,15 +56,39 @@ nav a:hover {
     background-position: bottom;
     background-color: #FFF;
 }
+h1, h2 {
+    font-family: 'Century Gothic', arial, sans-serif;
+}
 
 h1 {
-    font: normal 56px 'Century Gothic', arial, sans-serif;
+    font-size: 56px;
     text-align: center;
     margin-top: 40px;
     color: #ff7700;
 }
 
+h2 {
+    font-size: 28px;
+}
 
+
+
+.column-3 {
+    width: 80%;
+    min-height: 150px;
+    padding: 20px 10px 30px;
+    margin: 10px auto;
+    border: 2px solid #ff7700;
+    border-radius: 0 25%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: #60f2ef;
+}
 
 /*small devices, i.e. tablets*/
 @media all and (min-width: 768px){
@@ -69,6 +96,12 @@ h1 {
         background-size: cover;
         background-position: top;
         height: 450px;
+    }
+
+    .column-3 {
+        float: left;
+        width: 28.3333333%;
+        margin: 10px 2.5%;
     }
 }
 
